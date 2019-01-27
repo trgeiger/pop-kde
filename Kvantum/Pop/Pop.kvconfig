@@ -6,7 +6,7 @@ alt_mnemonic=true
 left_tabs=true
 attach_active_tab=false
 mirror_doc_tabs=true
-group_toolbar_buttons=false
+group_toolbar_buttons=true
 toolbar_item_spacing=0
 toolbar_interior_spacing=2
 spread_progressbar=true
@@ -122,7 +122,7 @@ text.focus.color=#414c52
 text.press.color=#414c52
 text.toggle.color=white
 text.shadow=0
-text.margin=1
+text.margin=0
 text.iconspacing=4
 indicator.element=arrow
 text.margin.top=2
@@ -142,6 +142,10 @@ text.toggle.color=white
 text.bold=false
 indicator.element=arrow
 indicator.size=0
+frame.top=3
+frame.bottom=3
+frame.left=3
+frame.right=3
 
 [ToolbarButton]
 frame.element=tbutton
@@ -230,19 +234,22 @@ frame.right=3
 inherits=PanelButtonCommand
 frame.element=lineedit
 interior.element=lineedit
-interior=false
-frame.top=2
-frame.bottom=2
-frame.left=2
-frame.right=2
-text.margin.top=2
-text.margin.bottom=2
-text.margin.left=2
-text.margin.right=2
+interior=true
+indicator.element=arrow-down
+indicator.size=12
+frame.top=8
+frame.bottom=8
+frame.left=8
+frame.right=8
+text.margin.top=0
+text.margin.bottom=0
+text.margin.left=0
+text.margin.right=0
 frame.expansion=0
 
 [ToolbarLineEdit]
 frame.element=lineedit
+interior.element=lineedit
 
 [DropDownButton]
 inherits=PanelButtonCommand
@@ -272,7 +279,7 @@ frame.bottom=2
 frame.left=2
 frame.right=2
 text.normal.color=#414c52
-text.focus.color=#414c52
+text.focus.color=#faa41a
 text.press.color=#414c52
 text.toggle.color=#b56706
 frame.expansion=0
@@ -472,30 +479,10 @@ text.bold=false
 frame.expansion=0
 
 [ComboBox]
-inherits=PanelButtonCommand
-frame.element=combo
-interior.element=combo
-interior=false
-frame.top=2
-frame.bottom=2
-frame.left=2
-frame.right=2
-text.margin.top=2
-text.margin.bottom=2
-text.margin.left=2
-text.margin.right=2
-text.focus.color=#414c52
-text.press.color=#005a64
-text.toggle.color=#414c52
-frame.expansion=0
+inherits=LineEdit
 
 [ToolbarComboBox]
-frame.element=combo
-indicator.element=flat-arrow-down
-text.normal.color=#cfd8dc
-text.focus.color=white
-text.press.color=white
-text.toggle.color=white
+inherits=LineEdit
 
 [Menu]
 inherits=PanelButtonCommand
