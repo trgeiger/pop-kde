@@ -1,12 +1,12 @@
 [%General]
 author=Tayler
 comment=A proper port of System76's Pop_OS! GTK theme
-x11drag=menubar_and_primary_toolbar
+x11drag=all
 alt_mnemonic=true
 left_tabs=true
 attach_active_tab=false
 mirror_doc_tabs=true
-group_toolbar_buttons=true
+group_toolbar_buttons=false
 toolbar_item_spacing=0
 toolbar_interior_spacing=2
 toolbutton_style=1
@@ -33,7 +33,7 @@ blurring=false
 popup_blurring=false
 vertical_spin_indicators=false
 spin_button_width=24
-fill_rubberband=false
+fill_rubberband=true
 merge_menubar_with_toolbar=true
 spread_menuitems=true
 small_icon_size=16
@@ -42,7 +42,7 @@ button_icon_size=16
 toolbar_icon_size=22
 combo_as_lineedit=true
 animate_states=false
-button_contents_shift=false
+button_contents_shift=true
 combo_menu=true
 hide_combo_checkboxes=true
 combo_focus_rect=false
@@ -101,7 +101,7 @@ iconless_pushbutton=true
 iconless_menu=true
 disabled_icon_opacity=100
 lxqtmainmenu_iconsize=16
-normal_default_pushbutton=true
+normal_default_pushbutton=false
 single_top_toolbar=true
 tint_on_mouseover=0
 transparent_pcmanfm_view=false
@@ -125,7 +125,7 @@ text.focus.color=#414c52
 text.press.color=#414c52
 text.toggle.color=white
 text.shadow=0
-text.margin=0
+text.margin=2
 text.iconspacing=4
 indicator.element=arrow
 text.margin.top=2
@@ -250,8 +250,8 @@ text.margin.right=0
 frame.expansion=0
 
 [ToolbarLineEdit]
-frame.element=lineedit
-interior.element=lineedit
+frame.element=tlineedit
+interior.element=tlineedit
 
 [DropDownButton]
 inherits=PanelButtonCommand
@@ -329,9 +329,6 @@ text.normal.color=#cfd8dc
 text.focus.color=#cfd8dc
 text.press.color=#ffffff
 text.toggle.color=#ffffff
-frame.left=0
-frame.right=0
-frame.top=0
 frame.bottom=4
 frame.expansion=0
 
@@ -484,7 +481,9 @@ frame.expansion=0
 inherits=LineEdit
 
 [ToolbarComboBox]
-inherits=LineEdit
+interior.element=tlineedit
+frame.element=tlineedit
+indicator.element=tarrow-down
 
 [Menu]
 inherits=PanelButtonCommand
