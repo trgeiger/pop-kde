@@ -1,16 +1,32 @@
 # pop-kde
 Port of the Pop_OS! GTK theme to KDE Plasma using the Kvantum theme engine.
 
-So far, it includes a Plasma Theme, a Kvantum widget theme, and a colorscheme.
+[Screenshot of Pop KDE](img/screen1.jpg)
+[Another screenshot of Pop KDE](img/screen2.jpg)
 
-## To-dos:
+So far, it includes:
+* a Plasma Theme
+* a Kvantum widget theme
+* a KDE colorscheme
+
+## Possible future features:
   * Installation script
   * Plasma Look-and-Feel package
   * Pop-Dark variant
   * Possibly a tweak of proper Breeze window decorations to match Pop
   * Terminal colorscheme (although gruvbox is perfect already...)
-  * Packages and/or a PPA 
-  
+  * Packages and/or a PPA
+
+## Installation:
+Eventually I'll write a script and create packages for an easier installation. For now, you can manually move the component parts to their respective installation directories.
+
+### Single user installations:
+For the Plasma Theme, move the `/plasma` folder into `~/.local/share/`, writing into the directories if they already exist
+
+For the Kvantum theme, move the Pop folder inside `/Kvantum` to `~/.config/Kvantum/Pop`
+
+The colorscheme goes in `~/.kde/share/apps/color-schemes`
+
 ## Recommendations for a unified look:
   * Fira Sans Book size 10 font for General, Small, Toolbar, and Menu
   * Fira Sans Bold size 10 for Window Title
@@ -19,7 +35,7 @@ So far, it includes a Plasma Theme, a Kvantum widget theme, and a colorscheme.
   * Install the Pop GTK theme from the [Pop!_OS](https://github.com/pop-os/gtk-theme) github and set it for GTK apps
   * If using Latte Dock, remove panel shadow and set panel background to opaque
   * Use the gruvbox colorscheme for Konsole and text editors
-  
+
 Feel free to submit bugs if anything looks out of place.
 
 ## Notes
