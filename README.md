@@ -1,8 +1,8 @@
 # pop-kde
 Port of the Pop_OS! GTK theme to KDE Plasma using the Kvantum theme engine.
 
-[Screenshot of Pop KDE](img/screen1.jpg)
-[Another screenshot of Pop KDE](img/screen2.jpg)
+![Screenshot of Pop KDE](img/screen1.jpg)
+![Another screenshot of Pop KDE](img/screen2.jpg)
 
 So far, it includes:
 * a Plasma Theme
