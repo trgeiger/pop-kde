@@ -34,7 +34,7 @@ The colorscheme goes in `~/.kde/share/apps/color-schemes`
   * Install Pop Icons set from the [Pop!_OS](https://github.com/pop-os/icon-theme) github
   * Install the Pop GTK theme from the [Pop!_OS](https://github.com/pop-os/gtk-theme) github and set it for GTK apps
   * If using Latte Dock, remove panel shadow and set panel background to opaque
-  * Use the gruvbox colorscheme for Konsole and text editors
+  * Use the [gruvbox](https://github.com/morhetz/gruvbox-contrib) colorscheme for Konsole and text editors
 
 Feel free to submit bugs if anything looks out of place.
 
